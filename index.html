@@ -72,13 +72,7 @@
                                 <th scope="col">Address</th>
                               </tr>
                             </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                              </tr>
+                            <tbody id='custTbleBdy'>
                             </tbody>
                           </table>
                     </div>
@@ -87,9 +81,9 @@
     
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <button type="button" class="btn btn-success">Save</button>
-                    <button type="button" class="btn btn-warning">Update</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" id="btnSaveCustomer" class="btn btn-success">Save</button>
+                    <button type="button" id="btnUpdateustomer" class="btn btn-warning">Update</button>
+                    <button type="button" id="btnDeleteustomer" class="btn btn-danger">Delete</button>
                 </div>
             </div>
         </div>
@@ -135,13 +129,7 @@
                                 <th scope="col">Item Qty</th>
                               </tr>
                             </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">I001</th>
-                                <td>Next</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                              </tr>
+                            <tbody id="itemtablebody">
                             </tbody>
                           </table>
                     </div>
@@ -150,9 +138,9 @@
     
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <button type="button" class="btn btn-success">Save</button>
-                    <button type="button" class="btn btn-warning">Update</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" id="btnSaveItem" class="btn btn-success">Save</button>
+                    <button type="button" id="btnUpdateItem" class="btn btn-warning">Update</button>
+                    <button type="button" id="btnDeleteItem" class="btn btn-danger">Delete</button>
                 </div>
             </div>
         </div>
@@ -368,5 +356,20 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="assets/navigationController.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Models   -->
+    <script src="assets/model/Customer.js"></script>  
+    <script src="assets/model/Item.js"></script>
+    <script src="assets/model/Order.js"></script>
+
+      <!-- DB -->
+      <script src="assets/db/customerDb.js"></script>  
+      <script src="assets/db/itemDb.js"></script>
+      <script src="assets/db/orderDb.js"></script>
+
+    <!-- Controllers -->
+    <script src="assets/controller/customerController.js"></script>
+    <script src="assets/controller/itemController.js"></script> 
+    <script src="assets/controller/orderController.js"></script> 
 </body>
 </html>
